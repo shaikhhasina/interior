@@ -13,22 +13,21 @@
   <!-- Header -->
   <header>
     <div class="container nav">
-      <a href="index.html#home" class="brand">
+      <a href="index.html" class="brand">
         <img src="images/logo.png" alt="Swami Samarth logo">
         <div class="brand-text">Swami Samarth<small>Interior Design &amp; Decor</small></div>
       </a>
       <nav class="nav-links" id="site-nav">
-        <a href="index.html#home">Home</a>
-        <div class="has-dropdown">
-          <a href="index.html#solutions" class="dd-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="caret">&#9662;</span></a>
-          <div class="dropdown"><a href="modular-kitchen.html">Modular Kitchen</a><a href="wardrobes.html">Wardrobes</a><a href="pop-work.html">POP Work</a><a href="lighting.html">Lighting</a><a href="false-ceiling.html">False Ceiling</a><a href="painting.html">Painting</a><a href="furniture.html">Furniture</a><a href="home-decor.html">Home Decor</a></div>
-        </div>
-        <a href="index.html#portfolio">Portfolio</a>
-				<a href="about.html">About Us</a>
-
-        <a href="contact.html">Contact</a>
-        <a href="contact.html#enquiry" class="nav-cta">Book Consultation</a>
-      </nav>
+      <a href="index.html">Home</a>
+      <div class="has-dropdown">
+        <a href="index.html#solutions" class="dd-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="caret">&#9662;</span></a>
+        <div class="dropdown"><a href="modular-kitchen.html">Modular Kitchen</a><a href="wardrobes.html">Wardrobes</a><a href="pop-work.html">POP Work</a><a href="lighting.html">Lighting</a><a href="false-ceiling.html">False Ceiling</a><a href="painting.html">Painting</a><a href="furniture.html">Furniture</a><a href="home-decor.html">Home Decor</a></div>
+      </div>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#enquiry" class="nav-cta">Book Consultation</a>
+    </nav>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
     </div>
   </header>
@@ -56,7 +55,7 @@
         <div class="cp-cards">
           <div class="cp-card">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-            <div><h4>Address</h4><p>Narhe, Pune, Maharashtra</p></div>
+            <div><h4>Address</h4><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Shop+No+1+Gangai+Complex+Narhe+Industrial+Estate+Road+Wadgaon+Budruk+Dhayari+Phata+Pune+Maharashtra+411041" target="_blank" rel="noopener" aria-label="Open our address in Google Maps">Shop No. 1, Gangai Complex, Narhe Industrial Estate Rd, Wadgaon Budruk, Dhayari Phata, Pune, Maharashtra 411041</a></p></div>
           </div>
           <div class="cp-card">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
@@ -82,7 +81,7 @@
       <div class="cp-form enq-form">
         <h3>Send Us an Enquiry</h3>
         <p class="cp-form-lead">Fill in the form and our team will contact you shortly.</p>
-        <form method="POST" action="send.php">
+        <form data-whatsapp>
           <div class="enq-grid">
             <div>
               <label for="cf-name">Your Name</label>
@@ -115,7 +114,7 @@
             </div>
           </div>
           <button type="submit" class="btn btn-gold btn-icon"><span>Send Enquiry</span></button>
-          <p class="enq-note">We reply within one working day.</p>
+          <p class="enq-note">Opens WhatsApp with your details filled in. We reply within one working day.</p>
         </form>
       </div>
 
@@ -124,47 +123,77 @@
 
   <!-- Full-width map -->
   <section class="map-section" aria-label="Our location on the map">
-    <iframe
-      title="Swami Samarth Interior Design & Decor location, Narhe, Pune"
-      src="https://www.google.com/maps?q=Narhe,+Pune,+Maharashtra&amp;output=embed"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      allowfullscreen></iframe>
-    <div class="map-badge">
-      <h4>Our Studio</h4>
-      <p>Narhe, Pune, Maharashtra</p>
-      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Narhe,+Pune,+Maharashtra" target="_blank" rel="noopener" class="btn btn-gold">Get Directions</a>
+    <div class="container map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15139.082051619649!2d73.8076555!3d18.4487259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295939f32bd23%3A0x8a0078598a374e93!2sSS%20Swami%20Samarth%20Interior%20Design%20%26%20Decor!5e0!3m2!1sen!2sin!4v1792313624418!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style="border:0; border-radius:12px;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="Map showing SS Swami Samarth Interior Design &amp; Decor">
+      </iframe>
+      <div class="map-badge">
+        <h4>Our Studio</h4>
+        <p>Shop No. 1, Gangai Complex, Narhe Industrial Estate Rd, Wadgaon Budruk, Dhayari Phata, Pune, Maharashtra 411041</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Shop+No+1+Gangai+Complex+Narhe+Industrial+Estate+Road+Wadgaon+Budruk+Dhayari+Phata+Pune+Maharashtra+411041" target="_blank" rel="noopener" class="btn btn-gold">Get Directions</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="page-footer">
-    <div class="container">
-      <div class="pf-grid">
-        <div>
-          <h4>Swami Samarth Interior Design &amp; Decor</h4>
-          <p>Narhe, Pune. Modular kitchens, bedrooms, living rooms, offices and decor, designed and built with care for every budget.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li>Narhe, Pune, Maharashtra</li>
-            <li><a href="tel:+918007540773">+91 80075 40773</a></li>
-            <li><a href="mailto:pthombre411@gmail.com">pthombre411@gmail.com</a></li>
-          </ul>
-        </div>
+  <footer>
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <div class="f-logo"><img src="images/logo.png" alt="Swami Samarth logo"></div>
+        <p>Swami Samarth Interior Design &amp; Decor is based in Narhe, Pune, designing and building modular kitchens, bedrooms, living rooms, offices, and decor with care for every budget.</p>
       </div>
-      <div class="pf-bottom">&copy; 2026 Swami Samarth Interior Design &amp; Decor. All rights reserved.</div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#solutions">Services</a></li>
+          <li><a href="index.html#process">Process</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="modular-kitchen.html">Modular Kitchen</a></li><li><a href="wardrobes.html">Wardrobes</a></li><li><a href="pop-work.html">POP Work</a></li><li><a href="lighting.html">Lighting</a></li><li><a href="false-ceiling.html">False Ceiling</a></li><li><a href="painting.html">Painting</a></li><li><a href="furniture.html">Furniture</a></li><li><a href="home-decor.html">Home Decor</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="f-contact">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Shop No. 1, Gangai Complex, Narhe Industrial Estate Rd, Wadgaon Budruk, Dhayari Phata, Pune, Maharashtra 411041</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+918007540773">+91 80075 40773</a></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg><a href="mailto:pthombre411@gmail.com">pthombre411@gmail.com</a></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg><a href="https://www.instagram.com/ss_interior1995" target="_blank" rel="noopener">@ss_interior1995</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Enquire Now</h4>
+        <form class="f-form" data-whatsapp>
+          <input type="text" name="name" placeholder="Your Name" aria-label="Your name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone number" required>
+          <input type="email" name="email" placeholder="Email Address" aria-label="Email address">
+          <select name="property_type" aria-label="What you are looking for" required>
+            <option value="" disabled selected>I am looking for</option>
+            <option>Modular Kitchen</option>
+            <option>Bedroom</option>
+            <option>Wardrobe</option>
+            <option>Living / Dining Room</option>
+            <option>Office Interior</option>
+            <option>Full Home Interior</option>
+            <option>Other</option>
+          </select>
+          <button type="submit" class="btn btn-gold">Submit</button>
+        </form>
+      </div>
     </div>
+    <div class="container footer-bottom">&copy; 2026 Swami Samarth Interior Design &amp; Decor. All rights reserved.</div>
   </footer>
 
   <a href="https://wa.me/918007540773" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
@@ -201,5 +230,6 @@
       });
     })();
   </script>
+<script src="whatsapp-form.js"></script>
 </body>
 </html>
