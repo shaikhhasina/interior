@@ -515,3 +515,42 @@ header.is-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotat
   /* On phones the badge sits below the map instead of covering it */
   .map-badge { position: static; transform: none; width: 100%; border-radius: 0; box-shadow: none; padding: 24px 5%; }
 }
+/* ==========================================================
+   About page (loads after style.css and reuses its variables)
+   ========================================================== */
+.about-hero {
+  background: linear-gradient(90deg, rgba(28,28,28,0.93) 0%, rgba(28,28,28,0.75) 60%, rgba(28,28,28,0.45) 100%),
+              url("images/hero.jpeg") center/cover no-repeat;
+  padding: 110px 0 90px;
+}
+.about-hero h1 .accent { color: var(--gold); }
+.about-hero .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+
+/* What we stand for */
+.values { background: var(--white); }
+.value-card { position: relative; padding: 38px 30px 32px; transition: transform 0.25s var(--ease), border-color 0.25s var(--ease), box-shadow 0.25s var(--ease); }
+.value-card:hover { transform: translateY(-5px); border-color: var(--gold); box-shadow: 0 14px 30px rgba(0,0,0,0.1); }
+.value-num {
+  width: 52px; height: 52px; line-height: 48px; text-align: center; border-radius: 50%;
+  border: 2px solid var(--gold); background: var(--black); color: var(--gold);
+  font-weight: var(--fw-bold); font-size: 1rem; margin-bottom: 20px;
+}
+.value-card h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.value-card p { color: #555; font-size: 0.94rem; line-height: 1.72; }
+
+/* Call to action band */
+.cta-band { background: var(--black); padding: 64px 0; border-top: 3px solid var(--gold); }
+.cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.cta-band h2 { color: #fff; font-size: clamp(1.5rem, 2.8vw, 2rem); letter-spacing: -0.02em; margin-bottom: 8px; }
+.cta-band p { color: #bbb; font-size: 1rem; }
+.cta-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .about-hero { padding: 90px 0 70px; }
+}
+@media (max-width: 600px) {
+  .cta-band { padding: 48px 0; }
+  .cta-buttons { width: 100%; }
+  .cta-buttons .btn { flex: 1 1 100%; text-align: center; }
+}
+
